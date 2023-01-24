@@ -7,3 +7,18 @@ button {
     color: cornflowerblue;
 }
 
+#muffin {
+    height: 100%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#error {
+    height: 100%;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
