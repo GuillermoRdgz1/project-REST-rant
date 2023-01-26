@@ -16,6 +16,11 @@ app.get('/', (req, res) => {
 })
 
 
+// app.get('/', (req, res) => {
+//     res.render('new_form')
+// })
+
+
 app.get('/', (req, res) => {
     res.render('index')
 })
