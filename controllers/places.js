@@ -4,6 +4,7 @@ const places = require('../models/places.js')
 
 
  router.post('/', (req, res) => {
+  console.log(req.body)
   if (!req.body.pic) {
     req.body.pic = 'http://placekitten.com/400/400'
   }
@@ -20,26 +21,6 @@ const places = require('../models/places.js')
 
 router.get('/new', (req, res) => {
   res.render('places/new')
-})
-
-
-
-router.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: '/images/thai.jpg'
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: '/images/bake.jpg'
-      }]
-      
-    res.render('places/index', { places })
 })
 
 
