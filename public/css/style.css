@@ -66,3 +66,12 @@ main {
     margin-left: 20px;
     background-color: white;
 }
+
+#show {
+    height: 50%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
